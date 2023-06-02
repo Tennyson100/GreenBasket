@@ -114,7 +114,7 @@ and frr gitignore.
 
 mongoose
   .connect(
-    process.env.PORT || 3000,
+    process.env.DB_URL || 3000,
     { useCreateIndex: true, useUnifiedTopology: true, useNewUrlParser: true },
   )
   .then(() => app.listen(process.env.PORT || 5000, console.log("Your server is up man.....")))
